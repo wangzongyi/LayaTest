@@ -1,0 +1,6 @@
+<page>
+   <item name="test/TestScene.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="scale.efc" props="" ifExport="分离模式" aName=""/>
+   <item name="Scene/MainScene.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="Animation/boom.ani" props="" ifExport="分离模式" aName=""/>
+</page>

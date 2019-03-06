@@ -1,5 +1,6 @@
 import GameConfig from "./GameConfig";
 import { ui } from "./ui/layaMaxUI";
+
 class Main {
 	constructor() {
 		//根据IDE设置初始化引擎		
@@ -29,21 +30,13 @@ class Main {
 
 	onConfigLoaded(): void {
 		laya.utils.ClassUtils.regClass("ui.scaleUI", ui.scaleUI);
+		// laya.utils.ClassUtils.regClass("Dictionary", Dictionary);
 
 		//加载IDE指定的场景
 		GameConfig.startScene && Laya.Scene.open(GameConfig.startScene);
 	}
 }
 //激活启动类
-//new Main();
+new Main();
 
-function f() {
-    var a = 10;
-    return function g() {
-        var b = a + 1;
-        return b;
-    }
-}
 
-var g = f();
-g(); // returns 11;
